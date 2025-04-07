@@ -1,4 +1,4 @@
-## 🛡️ Feature: 5v5 Team Battle Mode (by [Your Name])
+## 🛡️ Feature: 5v5 Team Battle Mode (by Shayan Pourahmad)
 
 ### 🔥 Feature Overview
 This feature introduces a new 5v5 battle system between a team of 5 Heroes and 5 Monsters. It adds more depth, strategy, and replayability to the game.
