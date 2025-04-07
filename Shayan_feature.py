@@ -1,6 +1,6 @@
 # 5V5_battle.py
 # Shayan Pourahmad
-#Student ID: 101474651
+# Student ID: 101474651
 import random
 from hero import Hero
 from monster import Monster
@@ -16,6 +16,7 @@ monster_powers = {
     "Freeze Time": 4,
     "Super Hearing": 6
 }
+
 
 def prepare_hero(hero, loot_options):
     print("\n--- Preparing a Hero ---")
@@ -54,6 +55,7 @@ def prepare_hero(hero, loot_options):
         print(f"Dream Buff → +{dream_buff} CS → Now: {hero.combat_strength}")
         print(f"Post-dream HP: {hero.health_points}")
 
+
 def prepare_monster(monster):
     print(f"Monster's initial combat strength: {monster.combat_strength}")
     print(f"Monster's initial health points: {monster.health_points}")
@@ -61,6 +63,7 @@ def prepare_monster(monster):
     buff = monster_powers[power_roll]
     monster.combat_strength += min(6, buff)
     print(f"Monster boosted with {power_roll} → +{buff} CS → Now: {monster.combat_strength}")
+
 
 def print_final_scoreboard(heroes, monsters):
     print("\n====== FINAL SCOREBOARD ======")
@@ -74,6 +77,7 @@ def print_final_scoreboard(heroes, monsters):
         status = " ☠️" if monster.health_points == 0 else ""
         print(f"Monster #{i}: HP = {monster.health_points}, CS = {monster.combat_strength}{status}")
 
+
 def run_team_battle():
     print("\n============================")
     print("     5v5 TEAM BATTLE MODE")
@@ -84,12 +88,12 @@ def run_team_battle():
 
     print("\n--- PREPARING HERO TEAM ---")
     for i, hero in enumerate(heroes):
-        print(f"\nHero #{i+1} Setup")
+        print(f"\nHero #{i + 1} Setup")
         prepare_hero(hero, loot_options_master)
 
     print("\n--- ENCHANTING MONSTERS ---")
     for i, monster in enumerate(monsters):
-        print(f"\nMonster #{i+1} Magic Roll")
+        print(f"\nMonster #{i + 1} Magic Roll")
         prepare_monster(monster)
 
     round_count = 1
