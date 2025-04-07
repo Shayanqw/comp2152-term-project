@@ -1,4 +1,4 @@
-# 5V5_battle.py
+# Feature: 5v5 Battle Mode - Verified and restored
 # Shayan Pourahmad
 #Student ID: 101474651
 import random
